@@ -13,7 +13,10 @@ Testing synthesis
 ```
 git clone https://github.com/tonghuikang/synthesize-test
 cd synthesize-test
-fluidsynth -F ./test.wav GeneralUser\ GS\ v1.471.sf2 ./test.mid
+fluidsynth -F ./test.wav GeneralUserGSv1.471.sf2 ./test.mid
+
+mkdir ~/soundfonts
+cp *.sf2 ~/soundfonts/
 ```
 
 ### Error Log
