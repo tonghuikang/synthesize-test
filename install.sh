@@ -31,6 +31,9 @@ echo 'Configuring firewall (ufw) to allow ports 8888 and 8889'
 sudo ufw allow 8888
 sudo ufw allow 8889
 
-echo 'For synthesizing'
+echo 'For synthesizing sound'
 sudo apt-get build-dep fluidsynth --no-install-recommends -y
 sudo apt-get install fluidsynth -y
+
+echo 'For the transcription notebooks'
+sudo pip3 install pysndfx librosa matplotlib
