@@ -36,4 +36,4 @@ sudo apt-get build-dep fluidsynth --no-install-recommends -y
 sudo apt-get install fluidsynth -y
 
 echo 'For the transcription notebooks'
-sudo pip3 install pysndfx librosa matplotlib
+sudo pip3 install pysndfx librosa matplotlib soundfile sounddevice midiutil
