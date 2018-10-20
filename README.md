@@ -15,6 +15,7 @@ git clone https://github.com/tonghuikang/synthesize-test
 cd synthesize-test
 fluidsynth -F ./test.wav GeneralUserGSv1.471.sf2 ./test.mid
 
+# copy soundfonts to another folder for my other repo to reference
 mkdir ~/soundfonts
 cp *.sf2 ~/soundfonts/
 ```
