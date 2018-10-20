@@ -41,5 +41,5 @@ sudo apt-get install sox libportaudio2 -y
 sudo pip3 install pysndfx librosa matplotlib soundfile sounddevice midiutil
 
 echo 'some errors with the latest notebook version'
-sudo pip3 uninstall notebook
+sudo pip3 uninstall notebook -y
 sudo pip3 install notebook==5.6.0
