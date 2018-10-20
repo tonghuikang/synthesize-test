@@ -37,7 +37,7 @@ sudo apt-get build-dep fluidsynth --no-install-recommends -y
 sudo apt-get install fluidsynth -y
 
 echo 'For the transcription notebooks'
-sudo apt-get install sox libportaudio2
+sudo apt-get install sox libportaudio2 -y
 sudo pip3 install pysndfx librosa matplotlib soundfile sounddevice midiutil
 
 echo 'some errors with the latest notebook version'
