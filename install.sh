@@ -25,6 +25,7 @@ echo 'Jupyter Notebook will be made accessible from:'
 sudo ifconfig | grep inet
 echo "c.NotebookApp.ip = '*'" >> ~/.jupyter/jupyter_notebook_config.py
 echo "c.NotebookApp.open_browser = False" >> ~/.jupyter/jupyter_notebook_config.py
+sudo chmod -R 777 ~/.jupyter
 echo 'Done!'
 
 echo 'Configuring firewall (ufw) to allow ports 8888 and 8889'
@@ -36,5 +37,9 @@ sudo apt-get build-dep fluidsynth --no-install-recommends -y
 sudo apt-get install fluidsynth -y
 
 echo 'For the transcription notebooks'
-sudo apt-get install sox
+sudo apt-get install sox libportaudio2
 sudo pip3 install pysndfx librosa matplotlib soundfile sounddevice midiutil
+
+echo 'some errors with the latest notebook version'
+sudo pip3 uninstall notebook
+sudo pip3 install notebook==5.6.0
